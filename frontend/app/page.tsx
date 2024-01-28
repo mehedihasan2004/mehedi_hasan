@@ -1,9 +1,5 @@
 const Home = () => {
-  return (
-    <div>
-      <h2>Mehedi Hasan</h2>
-    </div>
-  );
+  return <div className="flex flex-col gap-20"></div>;
 };
 
 export default Home;
