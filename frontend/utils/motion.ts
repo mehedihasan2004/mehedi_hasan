@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const { p, div } = motion;
+const { a, p, div } = motion;
 
 const slideInFromLeft = (delay: number) => {
   return {
@@ -22,6 +22,7 @@ const slideInFromTop = {
 };
 
 export {
+  a as A,
   p as P,
   div as Div,
   slideInFromLeft,
