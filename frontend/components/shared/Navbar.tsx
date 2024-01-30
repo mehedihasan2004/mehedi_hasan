@@ -29,7 +29,7 @@ const Navbar = () => {
     let direction = current - scrollYProgress.getPrevious()!;
 
     if (scrollYProgress.get() < 0.05) {
-      setVisible(false);
+      // setVisible(false);
     } else {
       if (direction < 0) {
         setVisible(true);
