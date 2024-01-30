@@ -19,7 +19,7 @@ const RootLayout = ({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-[#030014] max-w-[1444px] mx-auto overflow-x-hidden overflow-y-scroll border-l-2 border-r-2 border-blue-800`}
+        className={`${inter.className} bg-[#030014] text-gray-200 max-w-[1444px] mx-auto overflow-x-hidden overflow-y-scroll border-l-2 border-r-2 border-blue-800`}
       >
         <header />
         <main className="size-full">
