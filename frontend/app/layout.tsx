@@ -2,7 +2,8 @@ import "./globals.css";
 import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Navbar, StarsCanvas } from "@/components/shared";
+import { StarsCanvas } from "@/components/shared";
+import { Navbar } from "@/components/shared/nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,8 +24,9 @@ const RootLayout = ({
       >
         <StarsCanvas />
         <header />
-        <main className="size-full">
-          <Navbar /> {children}
+        <main className="size-full relative">
+          <Navbar />
+          {children}
         </main>
         <footer />
       </body>

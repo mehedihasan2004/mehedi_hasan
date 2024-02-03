@@ -57,7 +57,7 @@ const Hero = () => {
           </P>
           <A
             variants={slideInFromLeft(1)}
-            className="button-primary py-2 text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+            className="button-primary py-2 text-center text-white cursor-pointer rounded-lg max-w-[150px]"
           >
             Learn More!
           </A>

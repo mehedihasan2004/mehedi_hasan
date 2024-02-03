@@ -2,10 +2,7 @@ import { Hero } from "@/components/home";
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-20 h-[850px]">
-      <Hero />
-      <Hero />
-      <Hero />
+    <div className="flex flex-col gap-20">
       <Hero />
     </div>
   );
