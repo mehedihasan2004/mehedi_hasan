@@ -1,4 +1,5 @@
 import Hero from "./Hero";
 import Contact from "./Contact";
+import Skills from "./Skills";
 
-export { Hero, Contact };
+export { Hero, Skills, Contact };

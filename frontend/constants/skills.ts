@@ -1,246 +1,74 @@
-export const Skill_data = [
-  {
-    skill_name: "Html 5",
-    Image: "/html.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Css",
-    Image: "/css.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Java Script",
-    Image: "/js.png",
-    width: 65,
-    height: 65,
-  },
-  {
-    skill_name: "Tailwind Css",
-    Image: "/tailwind.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React",
-    Image: "/react.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Redux",
-    Image: "/redux.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React Query",
-    Image: "/reactquery.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Type Script",
-    Image: "/ts.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Next js 13",
-    Image: "/next.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Framer Motion",
-    Image: "/framer.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Stripe Payment",
-    Image: "/stripe.webp",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Node js",
-    Image: "/node-js.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Mongo db",
-    Image: "/mongodb.png",
-    width: 40,
-    height: 40,
-  },
+type TSkill = { name: string; image: string };
+type TSkillsCategory = { value: string; label: string; skills: TSkill[] };
+
+const languages: TSkill[] = [
+  { name: "Html", image: "/common/html.png" },
+  { name: "Css", image: "/common/css.png" },
+  { name: "C", image: "/languages/c.png" },
+  { name: "C++", image: "/languages/cpp.png" },
+  { name: "Javascript", image: "/common/js.png" },
+  { name: "Typescript", image: "/common/ts.png" },
 ];
 
-export const Socials = [
-  {
-    name: "Discord",
-    src: "/instagram.svg",
-  },
-  {
-    name: "Facebook",
-    src: "/facebook.svg",
-  },
-  {
-    name: "Instagram",
-    src: "/discord.svg",
-  },
+const frontendSkills: TSkill[] = [
+  { name: "Html 5", image: "/common/html.png" },
+  { name: "Css 3", image: "/common/css.png" },
+  { name: "Javascript", image: "/common/js.png" },
+  { name: "Typescript", image: "/common/ts.png" },
+  { name: "React Js", image: "/frontend/react.png" },
+  { name: "Next Js", image: "/frontend/next.png" },
+  { name: "Firebase Auth", image: "/common/firebase.png" },
+  { name: "Next Auth", image: "/frontend/nextauth.png" },
+  { name: "Redux & RTK", image: "/frontend/redux.png" },
+  { name: "React Router DOM", image: "/frontend/react-router-dom.png" },
+  { name: "TanStack Query", image: "/frontend/tanstack.png" },
+  { name: "React Hook Form", image: "/frontend/react-hook-form.png" },
+  { name: "Axios", image: "/frontend/axios.png" },
+  { name: "Material UI", image: "/frontend/mui.png" },
+  { name: "Ant Design", image: "/frontend/antd.png" },
+  { name: "Tailwind Css", image: "/frontend/tailwind.png" },
+  { name: "ShadCn UI", image: "/frontend/shadcn.png" },
 ];
 
-export const Frontend_skill = [
-  {
-    skill_name: "Html 5",
-    Image: "/html.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Css",
-    Image: "/css.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Java Script",
-    Image: "/js.png",
-    width: 65,
-    height: 65,
-  },
-  {
-    skill_name: "Tailwind Css",
-    Image: "/tailwind.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Material UI",
-    Image: "/mui.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React",
-    Image: "/react.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Redux",
-    Image: "/redux.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React Query",
-    Image: "/reactquery.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Type Script",
-    Image: "/ts.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Next js 13",
-    Image: "/next.png",
-    width: 80,
-    height: 80,
-  },
+const backendSkills: TSkill[] = [
+  { name: "Javascript", image: "/common/js.png" },
+  { name: "Typescript", image: "/common/ts.png" },
+  { name: "Node Js", image: "/backend/node.png" },
+  { name: "Express Js", image: "/backend/express.png" },
+  { name: "MongoDB", image: "/backend/mongodb.png" },
+  { name: "Mongoose", image: "/backend/mongoose.png" },
+  { name: "PostgreSQL", image: "/backend/postgres.png" },
+  { name: "Prisma", image: "/backend/prisma.png" },
+  { name: "Zod", image: "/backend/zod.png" },
+  { name: "JWT", image: "/backend/jwt.png" },
+  { name: "Bcrypt", image: "/backend/bcrypt.jpg" },
 ];
 
-export const Backend_skill = [
-  {
-    skill_name: "Node js",
-    Image: "/node-js.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Express js",
-    Image: "/express.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Mongo db",
-    Image: "/mongodb.png",
-    width: 40,
-    height: 40,
-  },
-  {
-    skill_name: "Fire base",
-    Image: "/Firebase.png",
-    width: 55,
-    height: 55,
-  },
-  {
-    skill_name: "Postger SQL",
-    Image: "/postger.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "My SQL",
-    Image: "/mysql.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Prisma",
-    Image: "/prisma.webp",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Graphql",
-    Image: "/graphql.png",
-    width: 80,
-    height: 80,
-  },
+const tools: TSkill[] = [
+  { name: "VS Code", image: "/tools/vs-code.png" },
+  { name: "Git", image: "/tools/git.png" },
+  { name: "GitHub", image: "/tools/github.png" },
+  { name: "Trello", image: "/tools/trello.png" },
+  { name: "Jira", image: "/tools/jira.png" },
+  { name: "Figma", image: "/tools/figma.png" },
+  { name: "Supabase", image: "/tools/supabase.png" },
+  { name: "Firebase", image: "/common/firebase.png" },
+  { name: "Netlify", image: "/tools/netlify.png" },
+  { name: "Vercel", image: "/tools/vercel.png" },
+  { name: "Postman", image: "/tools/postman.png" },
+  { name: "Draw SQL", image: "/tools/draw-sql.png" },
+  { name: "Chrome Dev Tools", image: "/tools/chrome-dev-tool.png" },
+  { name: "Prettier", image: "/tools/prettier.png" },
+  { name: "ESlint", image: "/tools/eslint.png" },
+  { name: "Husky", image: "/tools/husky.png" },
 ];
 
-export const Full_stack = [
-  {
-    skill_name: "React Native",
-    Image: "/ReactNative .png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Tauri",
-    Image: "/tauri.svg",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Docker",
-    Image: "/docker.webp",
-    width: 70,
-    height: 70,
-  },
-
-  {
-    skill_name: "Figma",
-    Image: "/figma.png",
-    width: 50,
-    height: 50,
-  },
+const skillsCategories: TSkillsCategory[] = [
+  { value: "languages", label: "Languages", skills: languages },
+  { value: "frontend", label: "Frontend", skills: frontendSkills },
+  { value: "backend", label: "Backend", skills: backendSkills },
+  { value: "tools", label: "Tools", skills: tools },
 ];
 
-export const Other_skill = [
-  {
-    skill_name: "Go",
-    Image: "/go.png",
-    width: 60,
-    height: 60,
-  },
-];
+export type { TSkillsCategory, TSkill };
+export default skillsCategories;

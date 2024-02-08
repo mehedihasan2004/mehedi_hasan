@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const { a, p, div } = motion;
+const { a, p, span, div } = motion;
 
 const slideIn = (
   direction: string,
@@ -48,6 +48,7 @@ const slideInFromTop = {
 export {
   a as A,
   p as P,
+  span as Span,
   div as Div,
   slideIn,
   slideInFromLeft,
