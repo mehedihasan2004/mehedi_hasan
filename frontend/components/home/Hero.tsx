@@ -13,7 +13,7 @@ import { FaWandMagicSparkles } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col size-full border-2 border-red-500">
+    <section className="relative flex flex-col size-full">
       <video
         autoPlay
         muted

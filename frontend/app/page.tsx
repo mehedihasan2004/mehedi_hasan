@@ -1,3 +1,4 @@
+import { ThreeDCard } from "@/components/aui";
 import { Contact, Hero, Skills } from "@/components/home";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
       <Hero />
       <Contact />
       <Skills />
+      <ThreeDCard />
     </div>
   );
 };

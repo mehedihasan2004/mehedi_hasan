@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import Tooltip from "../aui/Tooltip";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import skillsCategories, { TSkill, TSkillsCategory } from "@/constants/skills";
 import { Span } from "@/utils/motion";
+import { Tooltip } from "../aui";
 
 const Skills = () => {
-  let [activeTab, setActiveTab] = useState(skillsCategories[0].value);
+  let [activeTab, setActiveTab] = useState(skillsCategories[1].value);
 
   return (
     <section id="skills">

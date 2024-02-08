@@ -84,7 +84,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="border-2 border-green-500">
+    <section id="contact">
       <h3 className="text-2xl font-bold">Contact</h3>
       <div className="flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
         <Div
