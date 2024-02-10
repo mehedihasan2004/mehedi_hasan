@@ -6,6 +6,7 @@ type TUser = {
   email: string;
   role: E_ROLE;
   image?: string;
+  messages?: string[];
 };
 
 type UserModel = Model<TUser, Record<string, unknown>>;
