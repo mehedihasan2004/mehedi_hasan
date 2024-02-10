@@ -10,6 +10,7 @@ const ZCreateUser = z.object({
       .default(E_ROLE.VISITOR)
       .optional(),
     image: z.string().optional(),
+    messages: z.array(z.string()).optional(),
   }),
 });
 

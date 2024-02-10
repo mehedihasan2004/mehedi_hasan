@@ -4,12 +4,13 @@ import emailJs from "@emailjs/browser";
 import { Div, slideIn } from "@/utils/motion";
 import EarthCanvas from "../canvas/EarthCanvas";
 import { ChangeEvent, FC, FormEvent, useRef, useState } from "react";
+import { SubmitHandler, useForm } from "react-hook-form";
 
-interface IForm {
+type TForm = {
   name: string;
   email: string;
   message: string;
-}
+};
 
 interface InputProps {
   label: string;
@@ -43,8 +44,14 @@ const Input: FC<InputProps> = ({
 
 const Contact = () => {
   const ref: any = useRef();
-  const [form, setForm] = useState<IForm>({ name: "", email: "", message: "" });
+  const [form, setForm] = useState<TForm>({ name: "", email: "", message: "" });
   const [isLoading, setLoading] = useState<boolean>(false);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<TForm>({ defaultValues: { name: "", email: "", message: "" } });
 
   const onChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -52,35 +59,14 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   };
 
-  const onSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-
-    emailJs
-      .send(
-        "service_lbdt9wa" as string,
-        "template_racn3xb" as string,
-        {
-          from_name: form.name,
-          to_name: "Mehedi Hasan",
-          from_email: form.email,
-          to_email: "thisismehedihasan0.1@gmail.com",
-          message: form.message,
-        },
-        "wlYXkmlY-bkCToUpv" as string
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will back to you ASAP!");
-          setForm({ name: "", email: "", message: "" });
-        },
-        (err) => {
-          setLoading(false);
-          console.log("Error From Contact On Submit --> ", err);
-          alert("Something went wrong !!");
-        }
-      );
+  const onSubmit: SubmitHandler<TForm> = ({ name, email, message }) => {
+    try {
+      setLoading(true);
+    } catch (err) {
+      console.log("Error From Contact Form --> ", err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -141,3 +127,6 @@ const Contact = () => {
 };
 
 export default Contact;
+function async() {
+  throw new Error("Function not implemented.");
+}
